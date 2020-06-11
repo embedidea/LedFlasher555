@@ -1,0 +1,187 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7400 7500 0    50   ~ 0
+555 LED FLASHER
+Wire Bus Line
+	6550 4800 7050 4800
+Wire Bus Line
+	7050 4250 7050 4800
+Connection ~ 6550 4800
+Wire Bus Line
+	6550 4800 5750 4800
+Wire Bus Line
+	6550 4750 6550 4800
+Wire Bus Line
+	5750 4800 5750 4900
+Connection ~ 5750 4800
+Wire Bus Line
+	5050 4800 5750 4800
+Wire Bus Line
+	5050 4350 5050 4800
+Wire Bus Line
+	6550 4350 6550 4450
+Connection ~ 6550 4350
+Connection ~ 6250 4100
+Wire Bus Line
+	6250 4350 6550 4350
+Wire Bus Line
+	6250 4100 6250 4350
+Wire Bus Line
+	6550 3850 6550 3900
+Connection ~ 6550 3850
+Wire Bus Line
+	6450 3850 6550 3850
+Wire Bus Line
+	6450 3650 6450 3850
+Wire Bus Line
+	6250 3650 6450 3650
+Wire Bus Line
+	4950 3000 4950 3850
+Wire Bus Line
+	4950 3000 5750 3000
+Wire Bus Line
+	5750 3000 5750 2800
+Connection ~ 5750 3000
+Wire Bus Line
+	6550 3000 5750 3000
+Wire Bus Line
+	6550 3500 6550 3000
+Wire Bus Line
+	5750 3250 5750 3000
+Wire Bus Line
+	6550 3800 6550 3850
+Wire Bus Line
+	6550 4200 6550 4350
+$Comp
+L Timer:NE555 IC
+U 1 1 5EE1F94C
+P 5750 3650
+F 0 "IC" H 5750 3700 50  0000 C CNN
+F 1 "NE555" H 5750 3600 50  0000 C CNN
+F 2 "" H 5750 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5750 3650 50  0001 C CNN
+	1    5750 3650
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	5750 4050 5750 4800
+$Comp
+L power:VCC #PWR?
+U 1 1 5EE222C2
+P 5750 2800
+F 0 "#PWR?" H 5750 2650 50  0001 C CNN
+F 1 "VCC" H 5767 2973 50  0000 C CNN
+F 2 "" H 5750 2800 50  0001 C CNN
+F 3 "" H 5750 2800 50  0001 C CNN
+	1    5750 2800
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	5250 3850 4950 3850
+Wire Bus Line
+	6250 3450 7050 3450
+Wire Bus Line
+	6250 4100 6250 3850
+Wire Bus Line
+	5150 4100 6250 4100
+Wire Bus Line
+	5150 3450 5150 4100
+Wire Bus Line
+	5250 3450 5150 3450
+Wire Bus Line
+	7050 3750 7050 3950
+Wire Bus Line
+	5050 3650 5250 3650
+Wire Bus Line
+	5050 4050 5050 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5EE227AD
+P 5750 4900
+F 0 "#PWR?" H 5750 4650 50  0001 C CNN
+F 1 "GND" H 5755 4727 50  0000 C CNN
+F 2 "" H 5750 4900 50  0001 C CNN
+F 3 "" H 5750 4900 50  0001 C CNN
+	1    5750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EE21DFE
+P 7050 4100
+F 0 "D1" V 7089 3983 50  0000 R CNN
+F 1 "LED" V 6998 3983 50  0000 R CNN
+F 2 "" H 7050 4100 50  0001 C CNN
+F 3 "~" H 7050 4100 50  0001 C CNN
+	1    7050 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EE21950
+P 6550 4600
+F 0 "C1" H 6665 4646 50  0000 L CNN
+F 1 "10uF" H 6665 4555 50  0000 L CNN
+F 2 "" H 6588 4450 50  0001 C CNN
+F 3 "~" H 6550 4600 50  0001 C CNN
+	1    6550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EE2150B
+P 5050 4200
+F 0 "C2" H 5165 4246 50  0000 L CNN
+F 1 "0.01 uF" H 5165 4155 50  0000 L CNN
+F 2 "" H 5088 4050 50  0001 C CNN
+F 3 "~" H 5050 4200 50  0001 C CNN
+	1    5050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5EE2106F
+P 7050 3600
+F 0 "R3" H 7118 3646 50  0000 L CNN
+F 1 "1K" H 7118 3555 50  0000 L CNN
+F 2 "" V 7090 3590 50  0001 C CNN
+F 3 "~" H 7050 3600 50  0001 C CNN
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5EE20C28
+P 6550 4050
+F 0 "R2" H 6618 4096 50  0000 L CNN
+F 1 "10K" H 6618 4005 50  0000 L CNN
+F 2 "" V 6590 4040 50  0001 C CNN
+F 3 "~" H 6550 4050 50  0001 C CNN
+	1    6550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5EE2078F
+P 6550 3650
+F 0 "R1" H 6618 3696 50  0000 L CNN
+F 1 "1K" H 6618 3605 50  0000 L CNN
+F 2 "" V 6590 3640 50  0001 C CNN
+F 3 "~" H 6550 3650 50  0001 C CNN
+	1    6550 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
